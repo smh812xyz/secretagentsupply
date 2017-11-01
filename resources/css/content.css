@@ -60,6 +60,10 @@ h3 {
   justify-content: space-between;
 }
 
+.tablet-display {
+  display: none;
+}
+
 .inside-menu-container nav .menu {
   display: inline-flex;
   justify-content: space-between;
@@ -276,3 +280,24 @@ img {
   width: 960px;
   display: inline-flex;
 }
+
+@media only screen and (max-width: 1024px) {
+
+/* rules to apply for screens 1024px and smaller */
+  .large-display {
+    display: none;
+  }
+  .tablet-display {
+    display: inline-flex;
+    justify-content: center;
+  }
+
+  .item-container {
+    width: 47%;
+  }
+
+  #item-3 {
+    display: none;
+  }
+
+{
