@@ -10,7 +10,7 @@ h1 {
   margin-left: 3rem;
   font-size: 2rem;
   font-weight: bold;
-  line-height: 2.5rem;
+  /*line-height: 2.5rem;*/
   margin-bottom: 2rem;
   /*border: 1px solid yellow;*/
 }
@@ -38,12 +38,6 @@ h3 {
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
-
-.inside-splash-container {
-  display: flex;
-  width: 960px;
   align-items: center;
 }
 
@@ -107,6 +101,12 @@ h3 {
   background-repeat: no-repeat;
   background-size: cover;
   justify-content: center;
+}
+
+.inside-splash-container {
+  display: flex;
+  width: 960px;
+  align-items: center;
 }
 
 .splash-message-container {
@@ -212,12 +212,12 @@ img {
 }
 
 .item-description h4 {
-  /*font-weight: lighter;*/
 }
 
 .information-block h4 {
   padding: 1rem 0rem;
   margin-left: 2rem;
+
 }
 
 .information-block-white h4 {
@@ -229,20 +229,30 @@ img {
   display: inline-block;
   width: 100%;
   height: 20%;
-  /*  border: 1px solid black; */
+  border: 1px solid black;
 }
 
 .information-band {
   display: inline-flex;
   width: 100%;
   justify-content: space-between;
+  margin-bottom: 4rem;
+  /*border: 1px solid black;*/
+}
+
+.block-container {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  padding: 0rem 0rem;
+  margin: 0rem 0rem;
   /*border: 1px solid black;*/
 }
 
 .information-block {
   display: flex;
   flex-direction: column;
-  width: 35%;
+  width: 100%;
   background-color: black;
   text-align: left;
   justify-content: space-around;
@@ -251,12 +261,13 @@ img {
 .information-block-white {
   display: inline-flex;
   flex-direction: column;
-  width: 35%;
-  height: 100%;
+  width: 100px%;
+  /*height: 100%;*/
   background-color: white;
+  padding: 1rem 0rem;
   text-align: left;
   justify-content: flex-end;
-  margin-bottom: 4rem;
+  /*border: 1px solid black;*/
 }
 
 .information-spacer {
@@ -283,10 +294,12 @@ img {
 
 @media only screen and (max-width: 1024px) {
 
-/* rules to apply for screens 1024px and smaller */
+  /* rules to apply for screens 1024px and smaller */
+
   .large-display {
     display: none;
   }
+
   .tablet-display {
     display: inline-flex;
     justify-content: center;
@@ -300,4 +313,83 @@ img {
     display: none;
   }
 
-{
+}
+
+
+@media only screen and (max-width: 470px) {
+
+  /* rules to apply for screens 470px and smaller */
+
+  .splash-container {
+    display: flex;
+    align-content: flex-start;
+    width: 100%;
+    height: 15rem;
+  }
+
+  .splash-message-container {
+    margin-top: 10rem;
+    display: flex;
+    background-color: black;
+    width: 100%;
+    /*border: 1px solid yellow;*/
+  }
+
+  h1 {
+    font-size: 1rem;
+    margin: 0rem 0rem 1rem 2rem;
+    font-weight: bold;
+  }
+
+
+  .splash-message h3 {
+    margin: 1rem 0rem 1rem 2rem;
+    padding: 0rem 0rem;
+    font-size: .77rem;
+    font-weight: bold;
+  }
+
+  .inside-splash-container {
+    align-items: flex-start;
+  }
+
+  .copyright-container,
+  .content-container {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .item-container,
+  .product-container {
+    justify-content: space-around;
+  }
+
+  .information-block-white {
+    padding-bottom: 0rem;
+    margin-bottom: .5rem;
+  }
+
+  .large-display {
+    display: none;
+  }
+
+  .tablet-display {
+    display: inline-flex;
+    justify-content: center;
+  }
+
+  .information-band {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .block-container,
+  .item-container {
+    width: 90%;
+  }
+
+  #item-2 {
+    display: none;
+  }
+
+}
